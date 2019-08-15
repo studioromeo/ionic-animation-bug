@@ -1,14 +1,17 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+      Ionic transition animation bug demo
     </ion-title>
   </ion-toolbar>
 </ion-header>
-
 <ion-content>
   <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+    <p>
+      Click on the button to transition to the next page. When we go back we'll
+      see the button remain in the viewport until the animation has finished
+      rather than animating wth the rest of the page
+    </p>
+    <ion-button routerLink="/contact">Go to the contact page</ion-button>
   </div>
 </ion-content>
